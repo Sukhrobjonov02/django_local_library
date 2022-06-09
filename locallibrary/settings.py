@@ -122,7 +122,7 @@ USE_TZ = True
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# Redirect to home URL after login (Default redirects to /accounts/profile/)
+# Redirect to home URL after login (Default redirects to ccounts/profile/)
 LOGIN_REDIRECT_URL = '/'
 
 # This logs any emails sent to the console (so you can copy the password reset link from the console).
@@ -147,5 +147,5 @@ STATIC_URL = '/static/'
 # https://pypi.org/project/whitenoise/
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-STATICFILES_DIRS = [str(BASE_DIR.joinpath('static'))]
+STATICFILES_DIRS = BASE_DIR / 'static'
 LOGIN_URL = '/login/'
