@@ -148,3 +148,4 @@ STATIC_URL = '/static/'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 STATICFILES_DIRS = [str(BASE_DIR.joinpath('static'))]
+LOGIN_URL = '/login/'
