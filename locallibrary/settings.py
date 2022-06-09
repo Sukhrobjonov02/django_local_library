@@ -138,7 +138,7 @@ DATABASES['default'].update(db_from_env)
 
 # The absolute path to the directory where collectstatic will collect static files for deployment.
 # STATIC_ROOT = BASE_DIR / 'staticfiles'
-STATIC_ROOT = str(BASE_DIR.joinpath('staticfiles'))
+STATIC_ROOT = str(BASE_DIR.joinpath('static'))
 
 # The URL to use when referring to static files (where they will be served from)
 STATIC_URL = '/static/'
@@ -148,4 +148,3 @@ STATIC_URL = '/static/'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 STATICFILES_DIRS = [str(BASE_DIR.joinpath('static'))]
-LOGIN_URL = '/login/'
